@@ -1,0 +1,82 @@
+ int blog;
+ int a;
+ double aa;
+ int aaa;
+ int b;
+ double ab;
+ double mox;
+
+double cloze(int a)
+    {
+     return a*a;
+    }
+    
+double caza (double x, double y)
+    {
+     
+    }
+
+double cesar (double xx, double yy)
+    {
+     
+    }
+
+double cinema (double xxx, double yyy)
+    {
+    
+    }
+
+double lover (double z, double zz)
+    {
+    
+    }
+
+double craft (double zzz, double za)
+    {
+    
+    }
+    
+int decorar (int aaa, int aax)
+    {
+     return rand();
+    }
+    
+void main(){
+    TRISB = 0b00000011;
+    TRISA = 0b11111100;
+    TRISC = 0b01010101;
+    TRISD = 0b10101010;
+    PORTB = 0b00000000;
+    PORTA = 0b00000000;
+    PORTD = 0b00000000;
+    PORTC = 0b00000000;
+
+    while(1)
+    {
+      RB0_bit = 1 ;
+      delay_ms (100);
+      RB0_bit = 0;
+    }
+    
+    for (blog = 23; blog>=45; blog++)
+    {
+     RB1_bit = 1;
+     RA1_bit = 1;
+     RB2_bit = 1;
+     RB3_bit = 0;
+     RA2_bit = 0;
+    
+     delay_ms(17);
+    
+     RB1_bit = 0;
+     RA1_bit = 0;
+     RB2_bit = 0;
+     RB3_bit = 1;
+     RA2_bit = 1;
+    }
+
+    a = 34;
+    aa = 4434;
+    aaa = 5345;
+    cloze(a);
+}
