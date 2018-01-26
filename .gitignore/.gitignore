@@ -1,0 +1,36 @@
+#include <Servo.h>
+// inicializar a biblioteca para servos
+
+Servo myservo;
+//inicializar o myservo como servo a partir da função Servo
+
+int pos = 0;
+// variavel qualquer para ser a rotação, em grau, do servo
+
+void setup() 
+{
+  myservo.attach(9);
+// o servo será inicializado pelo pino 9/ servo.attach
+}
+
+void loop() {
+  for (pos = 0; pos <= 180; pos += 1)
+  {
+// de zero graus para 180 adicionando um
+    myservo.write(pos);
+// definir o servo para ir(write) até o novo local definido por "pos"/ servo.write(pos)
+
+    delay(15);                       
+// definir 15 milisegundos para cada posição do rotor
+  }
+  
+  for (pos = 180; pos >= 0; pos -= 1)
+// de 180 para 0 de 1 em 1
+  { 
+    myservo.write(pos);             
+// fazer o servo, denominado por myservo, andar 1 grau, definido por pos. o ".write" é para fazer ele ler e printar
+    delay(15);    
+// fazer isso a cada 15 milisegundos
+  }
+// volta para a posição que estava, 0 graus.
+}
